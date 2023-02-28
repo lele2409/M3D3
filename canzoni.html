@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Album example · Bootstrap v5.0</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="canzoni.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    #bleah {
+      position: relative;
+      width: 10%;
+      height: 10%;
+      top: 20px;
+      right: 150px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #jova img {
+      height: 265px;
+    }
+
+    #martin {
+      display: flex;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .margin-left {
+      margin-left: 45%;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+            viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+          <strong>Album</strong>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="#nirvana">Migliori</a>
+        <a class="py-2 d-none d-md-inline-block" href="#prefer">Il preferito</a>
+        <a class="py-2 d-none d-md-inline-block" href="#peggiori">Peggiori</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center container">
+      <div id="collapse-section" class="row py-lg-5 collapse show">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Ascolta il tuo album preferito!</h1>
+          <p class="lead text-muted">Abbiamo selezionato per te della musica secondo i tuoi gusti!</p>
+
+        </div>
+      </div>
+    </section>
+    <button class="btn btn-primary margin-left" type="button" data-bs-toggle="collapse" aria-controls="collapse-section"
+      data-bs-target="#collapse-section">
+      Nascondi/mostra intestazione!
+    </button>
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="martin" class="col">
+            <div class="card shadow-sm">
+              <img
+                src="https://www.passioninside.net/wp-content/uploads/2020/05/Martin-Garrix-feat.-John-Martin-Higher-Ground-1024x1024.jpg"
+                alt="garrix">
+
+              <div class="card-body">
+                <p class="card-text"><b>Martin Garrix</b> <br>Musica: House <br> Durata: <small class="text-muted">87
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+          <div id="nirvana" class="col">
+            <div class="card shadow-sm">
+              <img src="https://grafema.net/wp-content/uploads/2018/03/nirvana.jpg" alt="nirvana">
+              <div class="card-body">
+                <p class="card-text"><b>Nirvana</b> <br>Musica: Rock <br> Durata: <small class="text-muted">89
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+
+              </div>
+            </div>
+          </div>
+          <div id="cesare" class="col">
+            <div class="card shadow-sm">
+              <img src="http://www.wakeupnews.eu/wp-content/uploads/2014/05/logico-620x369.jpg" alt="cesare">
+              <div class="card-body">
+                <p class="card-text"><b>Cesare Cremonini</b> <br>Musica: Pop <br> Durata: <small class="text-muted">67
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="jack" class="col">
+            <div class="card shadow-sm">
+              <img src="https://legendarycover.it/wp-content/uploads/2019/01/dangerous-e1546725055608.jpg"
+                alt="Jackson">
+              <div class="card-body">
+                <p class="card-text"><b>Michael Jackson</b> <br>Musica: Pop <br> Durata: <small class="text-muted">76
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+          <div id="comacose" class="col">
+            <div class="card shadow-sm">
+              <img
+                src="https://rumoremag.com/wp-content/uploads/2019/02/49864552_10155675161966114_3111680896596443136_n.jpg"
+                alt="comacose">
+              <div class="card-body">
+                <p class="card-text"><b>Coma_Cose</b> <br>Musica: Indie <br> Durata: <small class="text-muted">47
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+          <div id="madame" class="col">
+            <div class="card shadow-sm">
+              <img src="https://cdn-media.italiani.it/site-vicenza/sites/49/2021/06/Madame-copertina.jpg" alt="madame">
+              <div class="card-body">
+                <p class="card-text"><b>Madame</b><br>Musica: Indie <br> Durata: <small class="text-muted">43
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="tananai" class="col">
+            <div class="card shadow-sm">
+              <img src="https://www.wemusic.it/wp-content/uploads/2020/01/tananai-scaled.jpg" alt="tananai">
+              <div class="card-body">
+                <p class="card-text"><b>Tananai</b><br>Musica: Indie <br> Durata: <small class="text-muted">51
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+          <div id="jova" class="col">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/736x/cf/8a/2e/cf8a2ed4e0acbca0a15950a015e247df--hiphop-album-cover.jpg"
+                alt="jova">
+              <div class="card-body">
+                <p class="card-text"><b>Jovanotti</b><br>Musica: Pop <br> Durata: <small class="text-muted">57
+                    min</small></p>
+                <textarea placeholder="Scrivi qui la tua recensione..." cols="30" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="prefer" class="col-12 flex collapse-prefer">
+            <div class="card shadow-sm col-7">
+              <img src="https://legendarycover.it/wp-content/uploads/2019/01/dangerous-e1546725055608.jpg"
+                alt="Jackson">
+
+              <div class="card-body">
+                <p class="card-text"><b>Michael Jackson</b><br>Titolo: <b>Dangerous</b><br>Musica: Pop <br> Durata:
+                  <small class="text-muted">76 min</small></p>
+                <textarea id="recensione" class="col-6 collapse-prefer" rows="3"
+                  placeholder="Scrivi qui la recensione del tuo preferito..."></textarea>
+              </div>
+            </div>
+            <table class="col-5">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Brano</th>
+                  <th scope="col">Durata (min)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Jam</td>
+                  <td>5:39</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Heal the world</td>
+                  <td>6:25</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Black or white</td>
+                  <td>4:16</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Dangerous</td>
+                  <td>6:57</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Who is it</td>
+                  <td>6:35</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <table id="peggiori" class="col-8">
+
+            <thead>
+              <tr>
+                <th class="col-2">Hall of shame!</th>
+              </tr>
+              <tr>
+                <th>#</th>
+                <th>Artista</th>
+                <th>Brano</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Renato Zero</td>
+                <td>"Mi vendo"</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>POOH</td>
+                <td>"Uomini soli"</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>NEK</td>
+                <td>"Sei solo tu"</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Gigi D'Alessio</td>
+                <td>"Mon amour"</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Celentano</td>
+                <td>"Soli"</td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+
+            <button class="btn btn-primary margin-left" type="button" data-bs-toggle="collapse"
+              aria-controls="prefer recensione" data-bs-target=".collapse-prefer">
+              Nascondi/mostra preferito!
+          </div>
+          <div id="collapse-album" class="container col-12 collapse show">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <img src="http://www.wakeupnews.eu/wp-content/uploads/2014/05/logico-620x369.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img
+                  src="http://www.contrordine.it/wp-content/uploads/2015/01/copertine-degli-album-musicali-belle-storia.jpg"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img src="https://www.ad010.com/wp-content/uploads/2015/11/AD010_ARTICOLO-BLOG_CARLO_901x704.jpg"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDUsJAZ27ShX4WtfXkEmyKhD4j_3UoD-RO-Q&usqp=CAU"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img src="https://www.ansa.it/webimages/img_457x/2022/6/24/7771aba3f8912e9baf4ae3fe08993f4a.jpg"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img
+                  src="https://i.pinimg.com/236x/fe/93/49/fe93492f7922cafa4421063a1c4d17c5--music-album-covers-music-albums.jpg"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img src="https://i0.wp.com/rkonair.com/wp-content/uploads/2020/06/Aladdin-sane.jpg?fit=494%2C500&ssl=1"
+                  class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <img
+                  src="https://legendarycover.it/wp-content/uploads/2019/01/Green-Day-Dookie-large-1-e1547830531692.jpg"
+                  class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary margin-left" type="button" data-bs-toggle="collapse"
+          aria-controls="collapse-album" data-bs-target="#collapse-album">
+          Nascondi/mostra album!
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <b>
+        <p>Numero di album in questa pagina: <span id="contatore"></span></p>
+        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+            href="../getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+  </footer>
+  <script src="../bootstrap.bundle.min.js"></script>
+  <script src="canzoni.js"></script>
+</body>
+
+</html>
